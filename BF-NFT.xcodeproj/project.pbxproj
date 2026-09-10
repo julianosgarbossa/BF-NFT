@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3A88389E3053446D0039C168 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3A88389D3053446D0039C168 /* FirebaseAuth */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3A8837CF3053389F0039C168 /* BF-NFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BF-NFT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A88389E3053446D0039C168 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = "BF-NFT";
 			packageProductDependencies = (
+				3A88389D3053446D0039C168 /* FirebaseAuth */,
 			);
 			productName = "BF-NFT";
 			productReference = 3A8837CF3053389F0039C168 /* BF-NFT.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 3A8837C63053389F0039C168;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3A88389C3053446D0039C168 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3A8837D03053389F0039C168 /* Products */;
 			projectDirPath = "";
@@ -353,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A88389C3053446D0039C168 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.19.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A88389D3053446D0039C168 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A88389C3053446D0039C168 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3A8837C73053389F0039C168 /* Project object */;
 }
