@@ -90,7 +90,9 @@ extension LoginViewController: UITextFieldDelegate {
 
 extension LoginViewController: LoginViewModelDelegate {
     func loginSuccess() {
-        showAlert(title: "Sucesso", message: "Login efetuado com sucesso!")
+        let tabBarController = TabBarController()
+        tabBarController.modalPresentationStyle = .fullScreen
+        present(tabBarController, animated: true)
     }
     
     func loginFailure(error: String) {

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3A88389E3053446D0039C168 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3A88389D3053446D0039C168 /* FirebaseAuth */; };
+		3A8838F1305456170039C168 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3A8838F0305456170039C168 /* Alamofire */; };
+		3A8839003054858C0039C168 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3A8838FF3054858C0039C168 /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A88389E3053446D0039C168 /* FirebaseAuth in Frameworks */,
+				3A8838F1305456170039C168 /* Alamofire in Frameworks */,
+				3A8839003054858C0039C168 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +88,8 @@
 			name = "BF-NFT";
 			packageProductDependencies = (
 				3A88389D3053446D0039C168 /* FirebaseAuth */,
+				3A8838F0305456170039C168 /* Alamofire */,
+				3A8838FF3054858C0039C168 /* AlamofireImage */,
 			);
 			productName = "BF-NFT";
 			productReference = 3A8837CF3053389F0039C168 /* BF-NFT.app */;
@@ -115,6 +121,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				3A88389C3053446D0039C168 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3A8838EF305456170039C168 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				3A8838FE3054858C0039C168 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3A8837D03053389F0039C168 /* Products */;
@@ -175,7 +183,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -211,7 +219,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -372,6 +380,22 @@
 				minimumVersion = 12.19.1;
 			};
 		};
+		3A8838EF305456170039C168 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.2;
+			};
+		};
+		3A8838FE3054858C0039C168 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -379,6 +403,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3A88389C3053446D0039C168 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		3A8838F0305456170039C168 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A8838EF305456170039C168 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		3A8838FF3054858C0039C168 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A8838FE3054858C0039C168 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
