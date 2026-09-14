@@ -68,7 +68,11 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 }
 
 extension HomeViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nftDetailViewController = NftDetailViewController(nft: viewModel.loadCurrentNft(index: indexPath.row))
+        nftDetailViewController.modalPresentationStyle = .fullScreen
+        present(nftDetailViewController, animated: true)
+    }
 }
 
 extension HomeViewController: UITableViewDataSource {
