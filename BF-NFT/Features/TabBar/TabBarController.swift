@@ -18,10 +18,14 @@ class TabBarController: UITabBarController {
         let homeViewController = HomeViewController()
         let homeNavigationController = UINavigationController(rootViewController: homeViewController)
         
-        viewControllers = [homeNavigationController]
+        let walletViewControler = WalletViewController()
+        let walletNavigationController = UINavigationController(rootViewController: walletViewControler)
+        
+        viewControllers = [homeNavigationController, walletNavigationController]
         tabBar.tintColor = UIColor(red: 130/255, green: 26/255, blue: 201/255, alpha: 1.0)
         
         guard let items = tabBar.items else { return }
         items[0].image = UIImage(systemName: "house.fill")
+        items[1].image = UIImage(systemName: "wallet.pass.fill")
     }
 }
