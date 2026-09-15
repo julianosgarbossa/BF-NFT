@@ -26,7 +26,7 @@ class WalletViewController: UIViewController {
         super.viewDidLoad()
         configNavigation()
         configProtocols()
-        viewModel.fetchRequest(typeFetch: .mock)
+        viewModel.fetchRequest(typeFetch: .alamofire)
     }
     
     private func configNavigation() {

@@ -287,4 +287,10 @@ class LoginScreen: UIView {
         loginButton.isEnabled = isEnable
         backgroundButtonImageView.alpha = isEnable ? 1 : 0.4
     }
+    
+    func clearTextFields() {
+        isEnableLoginButton(isEnable: false)
+        emailTextField.text = ""
+        passwordTextField.text = ""
+    }
 }
