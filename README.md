@@ -12,7 +12,6 @@
   [![Swift](https://img.shields.io/badge/Swift-5.0-F05138?style=flat-square&logo=swift&logoColor=white)](https://www.swift.org/)
   [![UIKit](https://img.shields.io/badge/UI-UIKit-2396F3?style=flat-square&logo=apple&logoColor=white)](https://developer.apple.com/documentation/uikit)
   [![Architecture](https://img.shields.io/badge/arquitetura-MVVM-8A2BE2?style=flat-square)](#arquitetura)
-  ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-F59E0B?style=flat-square)
 </div>
 
 ## 📱 Sobre o projeto
